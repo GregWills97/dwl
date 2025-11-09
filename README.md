@@ -1,5 +1,8 @@
 # dwl - dwm for Wayland
 
+## THIS IS A FORK
+This is my custom fork of dwl, you can find the upstream on [codeberg].
+
 Join us on our IRC channel: [#dwl on Libera Chat]  
 Or on the community-maintained [Discord server].
 
@@ -209,3 +212,4 @@ inspiration, and to the various contributors to the project, including:
 [wiki]: https://codeberg.org/dwl/dwl/wiki/Home#compatible-status-bars
 [Discord server]: https://discord.gg/jJxZnrGPWN
 [Wayland]: https://wayland.freedesktop.org/
+[codeberg]: https://codeberg.org/dwl/dwl/src/branch/main
