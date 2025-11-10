@@ -3,6 +3,9 @@
 ## THIS IS A FORK
 This is my custom fork of dwl, you can find the upstream on [codeberg].
 
+### Patches
+Patches from the dwl community applied to my fork can be found under the patches folder.
+
 Join us on our IRC channel: [#dwl on Libera Chat]  
 Or on the community-maintained [Discord server].
 
