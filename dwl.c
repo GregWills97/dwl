@@ -1418,6 +1418,12 @@ Monitor *
 dirtomon(enum wlr_direction dir)
 {
 	struct wlr_output *next;
+	enum wlr_direction cycle;
+
+	if ((dir == WLR_DIRECTION_LEFT) || (dir == WLR_DIRECTION_RIGHT))
+		cycle = WLR_DIRECTION_LEFT | WLR_DIRECTION_RIGHT;
+	else
+		cycle = WLR_DIRECTION_UP | WLR_DIRECTION_DOWN;
 
 	if (!wlr_output_layout_get(output_layout, selmon->wlr_output))
 		return selmon;
@@ -1425,7 +1431,7 @@ dirtomon(enum wlr_direction dir)
 			dir, selmon->wlr_output, selmon->m.x, selmon->m.y)))
 		return next->data;
 	if ((next = wlr_output_layout_farthest_output(output_layout,
-			dir ^ (WLR_DIRECTION_LEFT|WLR_DIRECTION_RIGHT),
+			dir ^ cycle,
 			selmon->wlr_output, selmon->m.x, selmon->m.y)))
 		return next->data;
 	return selmon;
