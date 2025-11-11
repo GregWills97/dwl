@@ -121,13 +121,6 @@ I would probably just submit raphi's patchset but I don't think that would be po
       <arg name="title" type="string" summary="The new title name."/>
     </event>
 
-    <event name="status">
-      <description summary="Update the status.">
-        Indicates the status has changed.
-      </description>
-      <arg name="status" type="string" summary="The new status name."/>
-    </event>
-
     <event name="appid" since="1">
       <description summary="Update the appid.">
         Indicates the appid has changed.
